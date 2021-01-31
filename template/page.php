@@ -11,9 +11,6 @@
 			
 				<?php the_content(); ?>
 				
-
-				<?php edit_post_link(); ?>
-
 			</article>
 			<!-- /article -->
 

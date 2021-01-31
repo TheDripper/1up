@@ -10,3 +10,11 @@
 </head>
 
 <body <?php body_class(); ?>>
+<header class="w-full flex justify-between items-center px-12 h-24 absolute">
+  <a href="/"><img src="<?php echo get_template_directory_uri(). '/build/icons/site_logo.svg'; ?>" /></a>
+  <img id="open-menu" src="<?php echo get_template_directory_uri(). '/build/icons/Icon:Menu.svg'; ?>" />
+  <nav>
+    <img id="close-menu" src="<?php echo get_template_directory_uri(). '/build/icons/Icon:Close.svg'; ?>" />
+    <?php wp_nav_menu(array('theme_location'=>'primary-navigation')); ?>
+  </nav>
+</header>

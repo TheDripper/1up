@@ -26,11 +26,33 @@ h1 {
     figure {
       transform: translateY(5%);
     }
-    height: 600px;
+    height: 900px;
+  }
+  @screen lg {
+    height: 700px;
   }
 }
 .button {
   a {
     @apply py-2 px-4 border border-white rounded-full;
+  }
+}
+nav {
+  position: fixed;
+  background: black;
+  @apply text-menu text-white font-body p-4;
+  display: none;
+  top: 30px;
+  right: 40px;
+  &.open {
+    @apply flex flex-col items-end;
+  }
+}
+footer {
+  background: black;
+}
+header {
+  img {
+    cursor: pointer;
   }
 }
