@@ -5,12 +5,9 @@ module.exports = {
   },
   darkMode: false, // or 'media' or 'class'
   theme: {
-    // maxWidth: {
-    //   "case-single": "1199px",
-    //   "6xl": "4rem"
-    // },
-    maxHeight: {
-      photo: "50rem",
+    screens: {
+      'md':'600px',
+      'lg':'1152px'
     },
     colors: {
       white: "#fff",
@@ -30,37 +27,23 @@ module.exports = {
       "5xl": "3rem",
       "6xl": "4rem",
       "7xl": "5rem",
-      head: "50px",
-      "sub-head": "30px",
-      body: "18px",
+      head: "64px",
+      "menu": "28px",
+      body: "20px",
     },
     fontFamily: {
-      head: ["Geomanist-bold"],
-      body: ["Thesans-reg"],
-      "body-bold": ["Thesans-bold"],
-      "body-medium": ["Thesans-medium"],
+      head: ["Heading"],
+      body: ["Body"],
+      eyebrow: ["eyebrow"],
     },
     textColor: {
-      pink: "#FB5373",
-      white: "#FFFFFF",
-      grey: "#2B3034",
-      "h5-grey": "#979797",
-      green: "#13C9B1",
+      content: "#081523",
+      "eyebrow-dark": "#01FDAB",
+      "eyebrow-white": "#0262F0",
+      "menu-footer-bg": "#010203",
+      "white":"#fff"
     },
-    backgroundColor: (theme) => ({
-      ...theme("colors"),
-      grey: "#2B3034",
-      pink: "#FB5373",
-      "back-grey": "#F4F4F5",
-    }),
-    borderColor: (theme) => ({
-      ...theme("colors"),
-      "shadow-grey": "#979797",
-      pink: "#FB5373",
-      "border-grey": "#E6EAEE",
-    }),
-    extend: {
-    },
+    extend: {},
   },
   variants: {
     extend: {},
